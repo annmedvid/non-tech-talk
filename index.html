@@ -8,10 +8,8 @@
 	<link rel="stylesheet" href="node_modules/shower-ribbon/styles/screen-16x10.css">
 </head>
 <body class="shower list">
-
 	<header class="caption">
 		<h1>My non-tech talk</h1>
-		<p>Yours Truly, j</p>
 	</header>
 
 	<section class="slide">
@@ -20,24 +18,56 @@
 		<h2 class="next">This talk will be not about technologies.</h2>
 	</section>
 
+	<section class="slide" id="big">
+		<h2 class="big-advice">Go into development</h2>
+	</section>
+
+	<section class="slide" id="big">
+		<h2 class="big-advice">Best advices I have received</h2>
+		<style>
+			#big {
+				padding: 100px;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+			}
+			#big .big-advice {
+				text-align: center;
+				font-size: 100px;
+			}
+		</style>
+	</section>
+
+	<section class="slide" id="big">
+		<h2 class="big-advice">will show new ways</h2>
+		<h2 class="big-advice">upgrade</h2>
+		<h2 class="big-advice">inspire</h2>
+	</section>
+
+	<section class="slide" id="big">
+		<h2 class="big-advice">open-minded</h2>
+	</section>
+
 	<section class="slide" id="cover">
 		<h2>My Non-Tech Talk</h2>
 		<p>by <a href="https://github.com/annmedvid">Anna Medvid</a></p>
 		<figure>
-			<img class="cover" src="pictures/cover.jpg" alt="Hands on the orange typewriter in a park">
-			<figcaption class="white">
-				<a href="http://fiftyfootshadows.net/">© John Carey</a>
-			</figcaption>
+			<img class="cover" src="pictures/cover.png" alt="Open your mind">
 		</figure>
 		<style>
+			#cover {
+				padding-right: 0;
+				background-color: #202020;
+			}
 			#cover h2 {
-				margin: 100px 0 0;
+				margin: 150px 0 0 400px;
 				color: #FFF;
 				text-align: center;
 				font-size: 70px;
 			}
 			#cover p {
-				margin: 10px 0 0;
+				margin: 10px 0 0 400px;
 				text-align: center;
 				color: #FFF;
 				font-style: italic;
@@ -50,7 +80,7 @@
 	</section>
 
 	<section class="slide" id="community">
-		<h2>Communities</h2>
+		<h2>1. Communities</h2>
 		<figure class="logo">
 			<img src="pictures/kottans.png" alt="Kottans logo">
 			<figcaption>
@@ -80,14 +110,14 @@
 				display: flex;
 				flex-wrap: wrap;
 				justify-content: space-between;
+				align-content: flex-start;
 			}
 			#community h2 {
-				font-size: 110px;
-				text-align: center;
 				flex: 1 0 100%;
+				margin-bottom: 100px;
 			}
 			#community .logo, #community .logo img  {
-				width: 120px;
+				width: 180px;
 			}
 			#community .logo figcaption {
 				text-align: center;
@@ -95,8 +125,47 @@
 		</style>
 	</section>
 
+	<section class="slide" id="big">
+		<h2 class="big-advice">fresh opinion</h2>
+		<h2 class="big-advice">new approach</h2>
+		<h2 class="big-advice">interesting people</h2>
+	</section>
+
 	<section class="slide">
-		<h2 class="">First source</h2>
+		<h2 class="">2. First source</h2>
+		<ul>
+			<li>HTML, CSS, DOM API - WhatWG / W3C standards</li>
+			<li>JS - ECMA Technical Committee 
+				<ul>
+					<li><a href="https://github.com/tc39">TC39</a></li>
+					<li><a href="https://twitter.com/bterlson">Brian Terlson</a>, <a href="https://twitter.com/mathias">Mathias Bynens</a> - editors of the ECMAScript standard</li>
+				</ul>
+			<li>vendors - <a href="https://developer.mozilla.org">MDN web docs</a></li>
+			<li>React - <a href="https://twitter.com/reactjs">twitter account</a></li>
+		</ul>
+	</section>
+
+	<section class="slide">
+		<ul>
+			...
+			<li>interesting people
+				<ul>
+					<li><a href="https://twitter.com/LeaVerou">Lea Verou</a> - contributor to CSSWG, author of interesting talks and writer (<a href="https://www.youtube.com/watch?v=8xjR7QXQKJ0">Colour Theory</a>, <a href="https://www.youtube.com/watch?v=3ikye7Qc7Ak">More CSS Secrets</a>)</li>
+					<li><a href="https://twitter.com/rauschma">Axel Rauschmayer</a> - an author of awesome books <a href="http://exploringjs.com/">Exploring JS</a></li>
+					<li><a href="https://twitter.com/slicknet">Nicholas C. Zakas</a> - an author of <a href="https://leanpub.com/understandinges6/read">Understanding ECMAScript 6</a> and personal <a href="https://www.nczonline.net/">blog</a></li>
+					<li><a href="https://twitter.com/unclebobmartin">Uncle Bob Martin</a> - a consultant and author in software development (<a href="https://www.youtube.com/watch?v=ecIWPzGEbFc">The Future of Programming</a>)</li>
+				</ul>
+			</li>
+		</ul>
+	</section>
+
+	<section class="slide" id="big">
+		<h2>This is also important:</h2>
+		<ul>
+			<li>validators (<a href="https://validator.w3.org/">The W3C Markup Validation Service</a>, <a href="https://checker.html5.org/">Nu Html Checker from WhatWG</a>)</li>
+			<li>accessibility (<a href="https://www.youtube.com/watch?v=1N4t4xpXhmA">Inhuman UI</a> from <a href="https://twitter.com/pepelsbey">Vadim Makeev</a>)</li>
+			<li>semantics</li>
+		</ul>
 	</section>
 
 	<section class="slide" id="picture">
@@ -106,28 +175,80 @@
 				<a href="https://pepelsbey.net">© Pepelsbey</a>
 			</figcaption>
 		</figure>
+		<strong class="next">divatoz</strong>
+		<style>
+			#picture .next {
+				position: absolute;
+				margin: 50px 0 0 100px;
+				font-size: 150px;
+				text-transform: uppercase;
+				transform: rotate(-20deg);
+				color: red;
+			}
+		</style>
 	</section>
 
-	<section class="slide">
-		<h2 class="">Keep learning</h2>
-		<strong>It can be a game!</strong>
+	<section class="slide" id="learning">
+		<h2>3. Keep learning</h2>
 		<ul>
 			<li>work on private projects</li>
-			<li><a href="https://geddski.teachable.com/p/flexbox-zombies">FLEXBOX ZOMBIES</a></li>
+			<li>it can be funny like a game!
+				<ul>
+					<li><a href="https://geddski.teachable.com/p/flexbox-zombies">FLEXBOX ZOMBIES</a></li>
+					<li><a href="https://checkio.org/">Empire of Code</a></li>
+					<li><a href="http://flukeout.github.io/">CSS Dinner</a> for learning CSS selectors</li>
+					<li><a href="https://www.git-game.com/">Git Game</a></li>
+				</ul>
+			</li>
+			<li>even in form of cartoons - <a href="https://twitter.com/codecartoons">Code Cartoons</a></li>
 		</ul>
+		<figure>
+			<img class="aside" src="pictures/cartoon.jpg" alt="DOM API cartoon">
+		</figure>
+		<style>
+			#learning .aside {
+				position: absolute;
+				width: 500px;
+				top: 80px;
+				right: 50px;
+			}
+		</style>
 	</section>
 
-	<section class="slide">
-		<h2 class="">Knowledge sharing</h2>
+	<section class="slide" id="knowladge">
+		<h2>4. Knowledge sharing</h2>
+		<figure>
+			<blockquote>
+				<p>In cooperation with other people a person can realize his potential and to reach bigger goals than by oneself.</p>
+        — <cite>World experience</cite>
+			</blockquote>
+		</figure>
+		<figure class="door">
+			<img class="cover" src="pictures/open.jpg" alt="The door is open">
+		</figure>
+		<style>
+			#knowladge {
+				background-color: black;
+			}
+			#knowladge .door img {
+				left: 65%;
+			}
+			#knowladge h2, #knowladge blockquote {
+				color: #FFF;
+			}
+			#knowladge blockquote {
+				padding-right: 400px;
+			}
+		</style>
 	</section>
 
 	<section class="slide" id="healthy">
-		<h2>Take care of yourself</h2>
+		<h2>5. Take care of yourself</h2>
 		<ol>
 			<li>Your brain is your main instrument
 				<ul>
 					<li>healthy sleep & vitamins & short breaks</li>
-					<li><a href="https://justgetflux.com/">f.lux</a> to make the color of computer's display adapt to the time of day</li>
+					<li><a href="https://justgetflux.com/">f.lux</a> makes the color of computer's display adapt to the time of day</li>
 					<li>gymnastics for eyes like <a href="http://blimb.su/">Blimb</a> (takes only 3.25 min)</li>
 				</ul>
 			</li>
@@ -138,22 +259,31 @@
 			</li>
 			<li>Keep calm
 				<ul>
-					<li><a href="https://www.youtube.com/watch?v=xPFRUM_oDKA&feature=youtu.be">Andrey Listochkin — Anti hype or how not to hunt on technologies and start living</a></li>
+					<li><a href="https://www.youtube.com/watch?v=xPFRUM_oDKA&feature=youtu.be">Andrey Listochkin — Anti hype or how not to hunt on technologies </br> and start living</a></li>
 					<li><a href="https://www.youtube.com/watch?v=FKTxC9pl-WM&feature=youtu.be">Kathy Sierra - Making Badass Developers</a></li>
 					<li>Pomodoro timer - <a href="http://rinik.net/pomodoro/">Pomodoro #1</a>, <a href="https://tomato-timer.com/">Pomodoro #2</a></li>
 				</ul>
 			</li>
 		</ol>
+		<figure>
+			<img class="aside" src="pictures/let-go.jpg" alt="Let th shit go">
+		</figure>
 		<style>
 			#healthy li {
-				font-size: 16px;
+				font-size: 20px;
+			}
+			#healthy .aside {
+				position: absolute;
+				width: 250px;
+				top: 200px;
+				right: 50px;
 			}
 		</style>
 	</section>
 
 	<section class="slide">
 		<h2>This presentation was made with Shower</h2>
-		<ul id="info">
+		<ul>
 			<li>Allows to create and publish slides online</li>
 			<li>Built on HTML, CSS and vanilla JavaScript</li>
 		</ul>
@@ -168,9 +298,6 @@
 			<a href="https://github.com/shower/shower">See more on GitHub</a>
 		</section>
 		<style>
-			#info {
-				margin-bottom: 0;
-			}
 			#snippet p {
 				font-size: 20px;
 				margin-bottom: 0;
